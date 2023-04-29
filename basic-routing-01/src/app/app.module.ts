@@ -10,6 +10,7 @@ import { ANewSubcriptionComponent } from './account/landlord/a-new-subcription/a
 import { ExistingSubcriptionComponent } from './account/landlord/existing-subcription/existing-subcription.component';
 import { SubcriptionListComponent } from './account/landlord/subcription-list/subcription-list.component';
 import { SubcriptionListItemComponent } from './account/landlord/subcription-list-item/subcription-list-item.component';
+import { MaterialUiModule } from './lib/material-ui/material-ui.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SubcriptionListItemComponent } from './account/landlord/subcription-lis
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialUiModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
