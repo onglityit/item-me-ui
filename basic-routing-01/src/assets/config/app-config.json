@@ -1,0 +1,6 @@
+{
+    "endpoints": {
+        "strPathGetAllLandlordSubscriptionsByLandlordId": 
+            "/api/getAllLandlordSubscriptionByLandlordId"
+        }
+}

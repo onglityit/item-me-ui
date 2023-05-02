@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnvConfig } from './models/config/env-config';
 
 @Component({
   selector: 'app-root',
