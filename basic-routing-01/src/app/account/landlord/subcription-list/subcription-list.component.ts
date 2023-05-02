@@ -25,34 +25,19 @@ export class SubcriptionListComponent {
 
   ngOnInit(){
 
-    // this.landlordService.getAllLandlordSubscriptionsByLandlordId(
-    //   this.testLandlordId ).subscribe(e => {
-    //     console.log('aa', e);
-    //   });
   }
 
   clickedTest(){
 
-    // const headers = { 'accept':'*/*' };
-    // this.http.get<any>(
-    //   `${environment.serverUrl}${environment.endpoints.strPathGetAllLandlordSubscriptionsByLandlordId}`
-    // + '/' + this.testLandlordId , {headers}
-    // ).subscribe(data => {
-    //     console.log('abc123', data);
-    // });
 
-    
-
-    // this.landlordService.getRandomJoke()
-    // .then(response => {
-    //   this.sampleText = response.data.joke;
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
-
+    this.sampleText = '';
     this.landlordService.getAllLandlordSubscriptionsByLandlordId(this.testLandlordId).subscribe(
-      a => console.log('abc1234', a)
+      a => {
+        console.log('abc1234', a)
+        a.subscriptions?.forEach(aa => {
+          this.sampleText += aa.companyNickName;
+        });
+      }
     );
   }
 }

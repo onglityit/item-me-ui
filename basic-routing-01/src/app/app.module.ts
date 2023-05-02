@@ -34,7 +34,7 @@ import axios from 'axios';
     HttpClientModule,
   ],
   providers: [
-    //httpInterceptorProvider
+    httpInterceptorProvider
   ],
   bootstrap: [AppComponent]
 })
