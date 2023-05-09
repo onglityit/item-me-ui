@@ -303,12 +303,14 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="container toolbar" role="banner" fxLayout="row" fxLayout.xs="row" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
 
-  <span></span>
   
-  <span><button routerLink="/1st"> hello first</button></span>
+  <div fxFlex="30%"><button routerLink="/1st"> hello first</button></div>
+  <div fxFlex="30%"><button routerLink="/home"> HOME</button></div>
+
 </div>
+
 
 
 <router-outlet></router-outlet>

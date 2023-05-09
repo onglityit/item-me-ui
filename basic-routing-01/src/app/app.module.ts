@@ -11,10 +11,9 @@ import { ExistingSubcriptionComponent } from './account/landlord/existing-subcri
 import { SubcriptionListComponent } from './account/landlord/subcription-list/subcription-list.component';
 import { SubcriptionListItemComponent } from './account/landlord/subcription-list-item/subcription-list-item.component';
 import { MaterialUiModule } from './lib/material-ui/material-ui.module';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { MyInterceptor } from './util/interceptor/my-interceptor';
+import { HttpClientModule } from '@angular/common/http';
 import { httpInterceptorProvider } from './util/interceptor/http-interceptor-providers';
-import axios from 'axios';
+
 
 @NgModule({
   declarations: [
